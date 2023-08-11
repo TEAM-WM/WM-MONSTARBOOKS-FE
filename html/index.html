@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/favicon.png" type="image/png">
+    <title>몬스타북스</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="global-header">
+            <div class="global-header-container">
+                <div class="global-service-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                회원가입
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객센터
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- global-service-list  종료 -->
+                <div class="global-header-main">
+                    <h1>
+                        <a href="./">
+                        </a>
+                    </h1>
+                    <!-- 검색 -->
+                    <div class="global-search">
+                        <form action="" method="get">
+                            <input type="text" name="search" placeholder="세상에 꼭 나와야만 했던 이야기" autocomplete="off">
+                            <button type="submit" class="search-icon"></button>
+                        </form>
+                        <section class="global-search-history">
+                            <div class="global-search-history-recommend">
+                                <h4>
+                                    추천검색어
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            챗GPT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            자바
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            파이썬
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            총균쇠
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            김태연
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            히가시노 게이고
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            노벨문학상
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            베르나르 베르베르
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="global-search-history-recent">
+                                <div class="recent-search">
+                                    <h4>
+                                        최근 검색어
+                                    </h4>
+                                    <button type="button" class="search-delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <span>전체삭제</span>
+                                    </button>
+                                </div>
+                                <ul>
+                                    <li class="recent-search-none center">
+                                        <i class="fa-solid fa-circle-exclamation"></i><br>
+                                        최근 검색어 내역이 없습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- 장바구니 / 마이페이지 아이콘 -->
+                    <ul class="global-user-menu-list">
+                        <li>
+                            <a href="" class="global-user-menu-cart"></a>
+                        </li>
+                        <li>
+                            <a href="" class="global-user-menu-profile"></a>
+                        </li>
+                    </ul>
+                </div><!-- global-header-main  종료 -->
+
+                <!-- 메인메뉴 -->
+                <nav class="global-main-menu">
+                    <!-- 전체 메뉴 아이콘 -->
+                    <button type="button" class="btn_menu">
+                    </button>
+                    <ul class="global-main-menu-list">
+                        <li>
+                            <a href="">베스트</a>
+                        </li>
+                        <li>
+                            <a href="">새로나온책</a>
+                        </li>
+                        <li>
+                            <a href="">국내도서</a>
+                        </li>
+                        <li>
+                            <a href="">외국도서</a>
+                        </li>
+                        <li>
+                            <a href="">이벤트</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="global-all-menu">
+                    <div class="global-book-list">
+                        <h4>
+                            <a href="">
+                                국내도서 전체
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+                        </h4>
+                        <ul>
+                            <li><a href="">소설</a></li>
+                            <li><a href="">시/에세이</a></li>
+                            <li><a href="">인문</a></li>
+                            <li><a href="">기술공학</a></li>
+                            <li><a href="">가정/육아</a></li>
+                            <li><a href="">요리</a></li>
+                            <li><a href="">건강</a></li>
+                            <li><a href="">취미/실용/스포츠</a></li>
+                            <li><a href="">경제/경영</a></li>
+                            <li><a href="">자기계발</a></li>
+                            <li><a href="">정치/사회</a></li>
+                            <li><a href="">역사/문화</a></li>
+                            <li><a href="">기술/공학</a></li>
+                            <li><a href="">외국어</a></li>
+                            <li><a href="">과학</a></li>
+                            <li><a href="">취업/수험서</a></li>
+                            <li><a href="">여행</a></li>
+                            <li><a href="">컴퓨터/IT</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="global-book-list">
+                        <h4>
+                            <a href="">
+                                외국도서 전체
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+                        </h4>
+                        <ul>
+                            <li><a href="">잡지</a></li>
+                            <li><a href="">엔터테인먼트</a></li>
+                            <li><a href="">만화/애니</a></li>
+                            <li><a href="">문학</a></li>
+                            <li><a href="">라이트노벨</a></li>
+                            <li><a href="">취미/실용/여행</a></li>
+                            <li><a href="">생활/요리/건강</a></li>
+                            <li><a href="">예술/건축</a></li>
+                            <li><a href="">인문/사회</a></li>
+                            <li><a href="">경제/경영</a></li>
+                            <li><a href="">과학/기술</a></li>
+                            <li><a href="">어린이ELT</a></li>
+                            <li><a href="">유아/아동/청소년</a></li>
+                            <li><a href="">한국관련도서</a></li>
+                            <li><a href="">문구/멀티/비도서</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <h4>
+                                    <a href="">
+                                        베스트 ~~~머 어케해야할까~~~~~
+                                        <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                    </a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="">
+                                        새로나온책
+                                        <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                    </a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="">
+                                        이벤트
+                                        <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                    </a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="">
+                                        고객센터
+                                        <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                    </a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div><!-- global-header-container 종료 -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </header><!-- header 종료 -->
+
+        <main>
+            <!-- 캐러셀슬라이드 -->
+            <div class="swiper main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/imgs/kyobo.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../assets/imgs/kyobo2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../assets/imgs/kyobo3.jpg" alt="고요하게 휘몰아치는 문학 최은영 5년만의 신작 소설집">
+                    </div>
+                    <div class="swiper-slide"><img src="../assets/imgs/slide1.png" alt="베르나르 베르베르 작가전"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- 이주의책 -->
+            <article class="main-weekly-wrap">
+                <div class="main-content-title">
+                    <div class="main-content-title-left">
+                        <h2>
+                            이주의 책
+                        </h2>
+                    </div>
+                    <strong>
+                        <a href="">더보기 +</a>
+                    </strong>
+                </div>
+                    <div class="slider-weekly">
+                        <div class="swiper-wrapper">
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791169259651.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                샬롯의 거미줄(70주년 기념 특별판)
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">엘윈 브룩스 화이트 · 시공주니어</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">14,400 원</span>
+                                    </div>
+                                    <p class="product-md-comment">뉴베리 아너 상 수상작! 70주년 기념 특별판</p>
+                                    <p class="product-md-desc">
+                                        1952년 출간된 이래 전 세계적으로 사랑을 받아 온 아동 문학의 고전이자 스테디셀러!
+                                        거미 샬롯과 돼지 윌버가 전해 주는 진정한 우정과 인생의 가치를 담은 작품
+                                        1952년 출간된 이래 전 세계적으로 사랑을 받아 온 아동 문학의 고전이자 스테디셀러!
+                                        거미 샬롯과 돼지 윌버가 전해 주는 진정한 우정과 인생의 가치를 담은 작품
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788997066841.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                잃어버린 사람
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">김숨 · 모요사</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">18,000 원</span>
+                                    </div>
+                                    <p class="product-md-comment">당신의 그리고 우리의 이야기</p>
+                                    <p class="product-md-desc">
+                                        1947년 9월 16일. ‘뜨내기들의 천국’ 부산에서 하루 동안 벌어진 이야기.
+                                        암울한 역사, 바깥으로 밀려난 잃어버린 사람들의 역사를 처연하고 아름답게 그린다.
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791168126626.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                황금성: 백 년이 넘은 식당
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">리사 이 · 위즈덤하우스</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">16,200 원</span>
+                                    </div>
+                                    <p class="product-md-comment">2023 뉴베리 아너상 수상작!</p>
+                                    <p class="product-md-desc">
+                                        이민자가 겪는 차별과 부당함을 어린이의 시선으로 풀어낸
+                                        『황금성』. 우리 사회가 지닌 높은 편견의 벽과, 그 벽을 부수고 넘어가고자 하는 사람들의 따뜻한 다정함
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788925576152.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                이것은 라울 뒤피에 관한 이야기
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">이소영 · 알에이치코리아</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">22,500 원</span>
+                                    </div>
+                                    <p class="product-md-comment">다채로운 빛의 화가 라울 뒤피의 이야기</p>
+                                    <p class="product-md-desc">
+                                        경쾌한 붓질과 다채로운 색채로 사람들을 끌어당기는 화가.
+                                        '삶은 즐거운 음악처럼’이라는 인생관을 모토로 긍정적인 마음을 그림으로 표현한 라울 뒤피를 만나다.
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791198129161.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                채소 식탁
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">김경민 · 래디시</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">17,100 원</span>
+                                    </div>
+                                    <p class="product-md-comment">10만 팔로워가 인정한 화제의 메뉴 100</p>
+                                    <p class="product-md-desc">
+                                        “내가 알던 그 채소가 맞나요?” 채소와 두부 응용 요리로 건강하고 맛있게 챙겨 먹는 채소 덮밥, 면, 토스트, 김밥, 스페셜 한입 요리 레시피
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788932923451.jpg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-card-title">
+                                        <h3>
+                                            <a href="">
+                                                스파이와 배신자
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <strong aria-label="저자 / 출판사" class="product-card-author">벤 매킨타이어 · 열린책들</strong>
+                                    <div class="product-price">
+                                        <span class="percent">10%</span>
+                                        <span class="price">28,800 원</span>
+                                    </div>
+                                    <p class="product-md-comment">스파이 소설만큼이나 흥미진진한 실화</p>
+                                    <p class="product-md-desc">
+                                        KGB와 M16을 오가며 냉전 시대의 종식을 앞당긴 올레크 고르디옙스키. 이중스파이로서의 그의 삶을 한 편의 스파이 소설처럼 몰입감과 속도감 있게 펼쳐낸다.
+                                    </p>
+                                </div>
+                            </div><!-- product-card 종료 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div><!-- 슬라이드 랩 종료 -->
+                    </div><!-- 슬라이드 위클리 종료 -->
+                    <!-- 썸네일 슬라이드 시작 -->
+                    <div class="slider-thumbnail">
+                        <div class="swiper-wrapper">
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791169259651.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788997066841.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791168126626.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788925576152.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791198129161.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788932923451.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- 베스트 -->
+            <article class="main-best-wrap">
+                <div class="main-content-title">
+                    <div class="main-content-title-left">
+                        <h2>
+                            베스트
+                        </h2>
+                        <ul>
+                            <li class="active">
+                                <a href="">전체</a>
+                            </li>
+                            <li>
+                                <a href="">국내도서</a>
+                            </li>
+                            <li>
+                                <a href="">외국도서</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <strong>
+                        <a href="">더보기 +</a>
+                    </strong>
+                </div>
+                <ul class="main-product-list">
+                    <script>
+                        for (let i = 0; i < 10; i++) {
+                            document.write("<li>");
+                            document.write("<span class='rank'>" + (i + 1) + "</span>");
+                            document.write("<div class='product-card'>")
+                            document.write("<div class='product-card-image'><img src='https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791165796396.jpg' alt=''></div>");
+                            document.write("<div class='product-card-title'><h3>아기 판다 푸바오아기 판다 푸바오 아기 판다 푸바오</h3></div>");
+                            document.write("<strong aria-label='저자 / 출판사' class='product-card-author'>에버랜드 외 · 시공주니어</strong>");
+                            document.write("</div></li>");
+
+                        }
+                    </script>
+
+                    <!-- <li>
+                        <span class='rank'>1</span>
+                        <div class="product-card">
+                            <div class="product-card-image">
+                                <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791165796396.jpg" alt="">
+                            </div>
+                            <div class="product-card-title">
+                                <h3>
+                                    아기 판다 푸바오
+                                </h3>
+                            </div>
+                            <strong aria-label="저자 / 출판사" class="product-card-author">에버랜드 외 · 시공주니어</strong>
+                        </div>
+                    </li> -->
+                </ul>
+            </article>
+            <!-- 신상책 -->
+            <article class="main-new-wrap">
+                <div class="main-content-title">
+                    <div class="main-content-title-left">
+                        <h2>
+                            새로 나왔어요
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">전체</a>
+                            </li>
+                            <li class="active">
+                                <a href="">국내도서</a>
+                            </li>
+                            <li>
+                                <a href="">외국도서</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <strong>
+                        <a href="">더보기 +</a>
+                    </strong>
+                </div>
+                <div class="swiper book">
+                    <ul class="main-product-list swiper-wrapper">
+                        <script>
+                            for (let i = 0; i < 10; i++) {
+                                document.write("<li class='swiper-slide'>");
+                                document.write("<div class='product-card'>")
+                                document.write("<div class='product-card-image'><img src='https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791165796396.jpg' alt=''></div>");
+                                document.write("<div class='product-card-title'><h3>아기 판다 푸바오아기 판다 푸바오아기 판다 푸바오</h3></div>");
+                                document.write("<strong aria-label='저자 / 출판사' class='product-card-author'>에버랜드 외 · 시공주니어</strong>");
+                                document.write("</div></li>");
+
+                            }
+                        </script>
+
+                        <!-- <li>
+                            <div class="product-card">
+                                <div class="product-card-image">
+                                    <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791165796396.jpg" alt="">
+                                </div>
+                                <div class="product-card-title">
+                                    <h3>
+                                        아기 판다 푸바오
+                                    </h3>
+                                </div>
+                                <strong aria-label="저자 / 출판사" class="product-card-author">에버랜드 외 · 시공주니어</strong>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </article>
+        </main>
+        <footer class="global-footer">
+            <div class="global-footer-container">
+                <div class="global-footer-notice">
+                    <h3>
+                        <a href="#">공지사항</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                시스템 점검으로 인한 서비스 일시 중지 안내(07/02(일) 새벽) 2023-06-28
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                도서앱 다운받으면 상품권 1천원 2023-07-01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                7월 상품권+쿠폰+결제+추천 혜택모음 2023-07-01
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="global-footer-bootom">
+                    <div class="global-footer-left">
+                        <h4 class="global-footer-title">
+                            <a href="">
+                                고객센터
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </h4>
+                        <a class="global-footer-contact" href="tel:10041004">1004-1004</a>
+                        <p class="global-footer-time">
+                            평일 09:00 ~ 18:00 (주말 &amp; 공휴일 제외)
+                        </p>
+
+                        <dl class="global-footer-detail-list">
+                            <div class="global-footer-detail-item">
+                                <dt>상호명</dt>
+                                <dd>주식회사몬스타북스</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>대표이사</dt>
+                                <dd>이승준</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>사업자등록번호</dt>
+                                <dd>203-87-00672</dd>
+                            </div>
+                        </dl>
+                        <dl class="global-footer-detail-address">
+                            <div class="global-footer-detail-item">
+                                <dt>주소</dt>
+                                <dd>서울특별시 구로구 시흥대로 163길 33 2층, 3층 (주호타워) </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <h3 class="footer-logo">
+                        <img src="../assets/imgs/logo3.png" alt="">
+                    </h3>
+                </div>
+            </div><!-- global-footer-container -->
+        </footer><!-- footer 종료 -->
+        <!-- Arrow up -->
+        <button class="arrow-up"></button>
+    </div>
+
+    <!-- 스크립트 구역 -->
+    <script src="https://kit.fontawesome.com/183a0f8087.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/search.js"></script>
+</body>
+
+</html>
