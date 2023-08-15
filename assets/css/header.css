@@ -289,14 +289,19 @@ a.global-user-menu-profile::before {
     padding: 40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.13);
     background-color: var(--color-white);
-    justify-content: flex-start;
-    align-items: top;
-    gap: 15%;
+    
 }
 .global-all-menu.active{
-    display: flex;
+    display: block;
 }
-/* .global-book-list{} */
+.global-book-list-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15%;
+}
+.global-book-list{
+    margin-right: 20px;
+}
 .global-book-list h4{
     font-size: var(--font-regular);
     margin-bottom: 17px;
@@ -304,9 +309,52 @@ a.global-user-menu-profile::before {
 .global-book-list h4 i {
     color: #cecece;
 }
-/* .global-book-list ul{} */
+.global-book-list ul{
+    display: flex;
+    width: 350px;
+    height: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .global-book-list ul li{
-    margin-top: 8px;;
+    margin-top: 8px;
+    margin-right: 30px;
+    font-size: var(--font-small);
+    width: 130px;
+    position: relative;
+}
+
+.global-book-list li::after{
+    font-family:FontAwesome;
+    content:"\f0fe";
+    color: #e2e2e2;
+    position: absolute;
+    right: 0;
+}
+.global-book-event{
+    margin-top: 50px;
+}
+
+.global-book-event ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.global-book-event ul li{
+    text-align: center;
+}
+.global-book-event ul li a{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #f6f6f6;
+    display: block;
+    font-size: var(--font-medium);
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+.global-book-event ul span{
+    color: #595959;
     font-size: var(--font-small);
 }
 /* 메인 메뉴 리스트 */
