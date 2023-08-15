@@ -123,29 +123,30 @@ const swiper2 = new Swiper('.swiper.book', {
   },
 });
 // 위클리 썸네일  슬라이더
-const sliderThumbnail = new Swiper('.slider-thumbnail', {
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
   slidesPerView: 3,
+  slidesPerGroup: 1,
+  centeredSlides: false,
+  observer: true,
+  observeParents: true,
   spaceBetween: 4,
-  watchSlidesProgress: true,
-  // centeredSlides: true,
-  // loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-},
+  loop: true,
+  freeMode: true,
+  atchSlidesProgress: true,
 });
 
-
-//위클리 슬라이더
-const sliderWeekly = new Swiper('.slider-weekly', {
-  slidesPerView: 1,
-  centeredSlides: true,
+const sliderWeekly = new Swiper(".slider-weekly", {
   loop: true,
-  loopedSlides: 6, //슬라이드 갯수와 같은 값 지정 
-  
+  slidesPerView: 1,
+  centeredSlides: false, //왼쪽부터 순차적으로 슬라이드가 들어섬
+  observer: true,
+  observeParents: true,
+  spaceBetween: 35,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   thumbs: {
     swiper: sliderThumbnail,
   },
 });
-
-
