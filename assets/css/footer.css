@@ -25,7 +25,7 @@
     font-size: var(--font-regular);
 }
 .global-footer-notice ul{
-    width:90%;
+    /* width:90%; */
     display: flex;
     justify-content: space-between;
 }
