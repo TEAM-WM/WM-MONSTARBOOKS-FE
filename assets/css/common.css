@@ -28,22 +28,23 @@ form {
     text-align: center;
     display: inline-block;
 }
-
 label {
     display: block;
     width: 100%;
     font-size: var(--font-small);
     line-height: 16px;
     margin-top: 5px;
+    text-align: left;
+    font-weight: var(--weight-bold);
 }
 
 input {
     display: block;
-    width: 340px;
+    width: 100%;
     height: 50px;
     padding: 0 12px;
     border-radius: 5px;
-    margin-top: 12px;
+    margin-bottom: 12px;
     font-size: var(--font-regular);
     border: 1px solid #d9d9d9;
     transition: border 300ms ease-in-out;
@@ -63,6 +64,7 @@ input {
     top: -12px;
     border-radius: 0 0 5px 5px;
     border-top: 0;
+    margin-bottom: 0;
 }
 
 input:focus,
@@ -132,13 +134,14 @@ input[type="file"] {
 
 /* 유효성 체크 */
 .valid-check {
+    display: inline-block;
     color: var(--color-main);
     font-size: var(--font-small);
     padding: 0 0 0 5px;
-
+    margin-bottom: 10px;
 }
 .login-text-wrap{
-    margin-top:17px;
+    margin-top:5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,3 +198,91 @@ input[type="file"] {
     height: 100%;
     object-fit: cover;
 }
+.tab-wrap{
+    width: 340px;
+    margin: 0 auto;
+}
+.tab-list{
+    display: flex;
+}
+.tab-list li{
+    flex: 1 1;
+    height: 100%;
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+    font-size: var( --font-small);
+    padding: 10px 0;
+    color: #898989;
+}
+.tab-list li.active{
+    font-weight: var(--weight-bold);
+    background-color: var(--color-main);
+    color: var(--color-white);
+}
+.tab-list li:first-child{
+    border-right: none;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+.form-small{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.form-small input[type="button"]{
+    font-size: var(--font-micro);
+    width: 30%;
+}
+
+.accordion-wrap {
+    width: 340px;
+    margin: 20px auto;
+}
+.accordion-wrap form{
+    width: 100%;
+}
+.accordion-wrap li{
+    border: 1px solid #eaeaea;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+.accordion-wrap li input{
+}
+.accordion-wrap li .accordion-item{
+    display: none;
+    padding: 20px;
+}
+.accordion-wrap li.active{
+    background-color: var(--color-white);
+}
+.accordion-wrap li.active .accordion-item{
+    display: block;
+}
+.accordion-wrap button{
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    position: relative;
+}
+.accordion-wrap button::after{
+    content: '\f077';
+    font-family:FontAwesome;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    transition: all 0.3s;
+    transform: rotate(-180deg);
+}
+.accordion-wrap li.active button::after{
+    transform: rotate(0deg);
+}
+
+
