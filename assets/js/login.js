@@ -9,14 +9,19 @@ document.querySelector('#birth').setAttribute('max', today);
 // 아코디언
 const acc = document.querySelectorAll('.accordion-wrap li');
 
+
 for (let i = 0; i < acc.length; i++) {
   acc[i].querySelector('button').addEventListener('click', function (e) {
-    
-    if(e.target.parentElement.classList==='active'){
-      console.log('sdf');
+    const accItem = acc[i].querySelector('.accordion-item');
+    console.log();
+    if(acc[i].getAttribute('class')==='active'){
+      if(accItem.style.display=='none'){
+        console.log('sdf')
+      }
+      e.target.parentElement.classList.remove('active')
+    }else{
+      e.target.parentElement.classList.add('active');
     }
-    console.log(e.target.parentElement);
-    e.target.parentElement.classList.toggle('active');
   });
 }
 
