@@ -285,7 +285,7 @@ a.global-user-menu-profile::before {
     display: none;
     position: absolute;
     /* border: 1px solid var(--color-main-dark); */
-    top: 216px;
+    top: 217px;
     padding: 40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.13);
     background-color: var(--color-white);
