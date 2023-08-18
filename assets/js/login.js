@@ -13,15 +13,13 @@ const acc = document.querySelectorAll('.accordion-wrap li');
 for (let i = 0; i < acc.length; i++) {
   acc[i].querySelector('button').addEventListener('click', function (e) {
     const accItem = acc[i].querySelector('.accordion-item');
-    console.log();
-    if(acc[i].getAttribute('class')==='active'){
-      if(accItem.style.display=='none'){
-        console.log('sdf')
+    // 현재 클릭한 아이템을 제외한 다른 애들 닫기
+    for (let j = 0; j < acc.length; j++) {
+      if (j !== i) {
+        acc[j].classList.remove('active');
       }
-      e.target.parentElement.classList.remove('active')
-    }else{
-      e.target.parentElement.classList.add('active');
     }
+    acc[i].classList.toggle('active');
   });
 }
 
