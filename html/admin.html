@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body>
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <h1 aria-label="몬스타북스 :: 관리자">
+                </h1>
+            </div>
+            <nav>
+                <ul class="admin-menu-list">
+                    <li class="active">
+                        <a href="">
+                            <i class="fa-solid fa-cube"></i>
+                            <span>
+                                대시보드
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <span>
+                                회원관리
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>
+                                도서관리
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>
+                                주문관리
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-ticket-simple"></i>
+                            <span>
+                                쿠폰관리
+                            </span>
+                        </a>
+                    </li>
+                    <li class="accordion-button">
+                        <a href="">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>
+                                게시판 관리
+                            </span>
+                        </a>
+                        <div class="admin-submenu-list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        공지사항
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        1:1문의
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        리뷰 관리
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        배너 관리
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        <div class="admin-content-wrap">
+            <main>
+                <article>
+                    <table>
+                        <tr>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+                            <th>제목</th>
+
+                        </tr>
+                        <script>
+                            for (let i = 0; i < 10; i++) {
+                                document.write("<tr>");
+                                document.write("<td><img src='../assets/imgs/kyobo2.jpg'></td>");
+                                for (let j = 0; j < 7; j++) {
+                                    document.write("<td>내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</td>")
+                                }
+                                document.write("</tr>")
+                            }
+                        </script>
+                    </table>
+                </article>
+            </main>
+        </div><!-- admin-content-wrap -->
+    </div><!-- admin-container -->
+    <!-- 스크립트 구역 -->
+    <script src="https://kit.fontawesome.com/183a0f8087.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>
