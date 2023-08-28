@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body>
+
+    <button id="openModalBtn" onclick="openModal('policyAgreeModal')">모달 열기</button>
+    <button id="openModalBtn" onclick="openModal('privacyAgreeModal')">모달 열기</button>
+    <div id="policyAgreeModal" class="modal">
+        <section class="modal-content-wrap">
+            <div class="modal-title">
+                <h3>
+                    MonstarBooks 이용약관
+                </h3>
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-text">
+                    <pre>
+                        
+                    </pre>
+                </div>
+                <button class="closeModalBtn" onclick="closeModal('privacyAgreeModal')">닫기</button>
+            </div>
+        </section>
+    </div>
+    <script src="../assets/js/common.js"></script>
+</body>
+
+</html>

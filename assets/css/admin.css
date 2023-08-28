@@ -136,7 +136,7 @@
     position: relative;
 }
 
-table {
+.admin-container table {
     width: 100%;
     max-width: 100%;
     table-layout: fixed;
@@ -146,11 +146,11 @@ table {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10);
     padding: 10px;
 }
-tr:hover{
+.admin-container tr:hover{
     background-color: #fbfbfb;
 }
-td,
-th {
+.admin-container td,
+.admin-container th {
     padding: 20px 10px;
     text-overflow: ellipsis;
     overflow: hidden;
