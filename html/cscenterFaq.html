@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/imgs/favicon.png" type="image/png">
+    <title>몬스타북스</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="global-header">
+            <div class="global-header-container">
+                <div class="global-service-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                회원가입
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객센터
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- global-service-list  종료 -->
+                <div class="global-header-main">
+                    <h1>
+                        <a href="./">
+                        </a>
+                    </h1>
+                    <!-- 검색 -->
+                    <div class="global-search">
+                        <form action="" method="get">
+                            <input type="text" name="search" placeholder="세상에 꼭 나와야만 했던 이야기" autocomplete="off">
+                            <button type="submit" class="search-icon"></button>
+                        </form>
+                        <section class="global-search-history">
+                            <div class="global-search-history-recommend">
+                                <h4>
+                                    추천검색어
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            챗GPT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            자바
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            파이썬
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            총균쇠
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            김태연
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            히가시노 게이고
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            노벨문학상
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            베르나르 베르베르
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="global-search-history-recent">
+                                <div class="recent-search">
+                                    <h4>
+                                        최근 검색어
+                                    </h4>
+                                    <button type="button" class="search-delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <span>전체삭제</span>
+                                    </button>
+                                </div>
+                                <ul>
+                                    <li class="recent-search-none center">
+                                        <i class="fa-solid fa-circle-exclamation"></i><br>
+                                        최근 검색어 내역이 없습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- 장바구니 / 마이페이지 아이콘 -->
+                    <ul class="global-user-menu-list">
+                        <li>
+                            <a href="" class="global-user-menu-cart"></a>
+                        </li>
+                        <li>
+                            <a href="" class="global-user-menu-profile"></a>
+                        </li>
+                    </ul>
+                </div><!-- global-header-main  종료 -->
+
+                <!-- 메인메뉴 -->
+                <nav class="global-main-menu">
+                    <!-- 전체 메뉴 아이콘 -->
+                    <button type="button" class="btn_menu">
+                    </button>
+                    <ul class="global-main-menu-list">
+                        <li>
+                            <a href="">베스트</a>
+                        </li>
+                        <li>
+                            <a href="">새로나온책</a>
+                        </li>
+                        <li>
+                            <a href="">국내도서</a>
+                        </li>
+                        <li>
+                            <a href="">외국도서</a>
+                        </li>
+                        <li>
+                            <a href="">이벤트</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="global-all-menu">
+                    <div class="global-book-list-wrap">
+                        <div class="global-book-list">
+                            <h4>
+                                <a href="">
+                                    국내도서 전체
+                                    <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li><a href="">소설</a></li>
+                                <li><a href="">시/에세이</a></li>
+                                <li><a href="">인문</a></li>
+                                <li><a href="">기술공학</a></li>
+                                <li><a href="">가정/육아</a></li>
+                                <li><a href="">요리</a></li>
+                                <li><a href="">건강</a></li>
+                                <li><a href="">취미/실용/스포츠</a></li>
+                                <li><a href="">경제/경영</a></li>
+                                <li><a href="">자기계발</a></li>
+                                <li><a href="">정치/사회</a></li>
+                                <li><a href="">역사/문화</a></li>
+                                <li><a href="">기술/공학</a></li>
+                                <li><a href="">외국어</a></li>
+                                <li><a href="">과학</a></li>
+                                <li><a href="">취업/수험서</a></li>
+                                <li><a href="">여행</a></li>
+                                <li><a href="">컴퓨터/IT</a></li>
+                                <li><a href="">기타</a></li>
+                            </ul>
+                        </div>
+                        <div class="global-book-list">
+                            <h4>
+                                <a href="">
+                                    외국도서 전체
+                                    <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li><a href="">잡지</a></li>
+                                <li><a href="">엔터테인먼트</a></li>
+                                <li><a href="">만화/애니</a></li>
+                                <li><a href="">문학</a></li>
+                                <li><a href="">라이트노벨</a></li>
+                                <li><a href="">취미/실용/여행</a></li>
+                                <li><a href="">생활/요리/건강</a></li>
+                                <li><a href="">예술/건축</a></li>
+                                <li><a href="">인문/사회</a></li>
+                                <li><a href="">경제/경영</a></li>
+                                <li><a href="">과학/기술</a></li>
+                                <li><a href="">어린이ELT</a></li>
+                                <li><a href="">유아/아동/청소년</a></li>
+                                <li><a href="">한국관련도서</a></li>
+                                <li><a href="">문구/멀티/비도서</a></li>
+                                <li><a href="">기타</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="global-book-event">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                </a>
+                                <span>
+                                    베스트
+                                </span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    N
+                                </a>
+                                <span>
+                                    새로나온책
+                                </span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-gift"></i>
+                                </a>
+                                <span>이벤트</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-headset"></i>
+                                </a>
+                                <span>
+                                    고객센터
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div><!-- global-header-container 종료 -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </header><!-- header 종료 -->
+        <main class="main">
+            <div class="customer-wrap">
+                <!-- customer-title-wrap -->
+                <div class="customer-title-wrap">
+                    <h2>
+                        <strong>자주 묻는 질문</strong>입니다.
+                    </h2>
+                </div>
+                <!-- customer-subtitle-wrap -->
+                <div class="customer-subtitle-wrap">
+                    <h3>자주 묻는 질문</h3>
+                </div>
+                <!-- customer-subtitle-wrap -->
+                <!-- customer-search-box -->
+                <div class="customer-search-box">
+                    <div class="customer-search-input">
+                        <form action="" method="get">
+                            <input type="text" placeholder="질문을 검색해보세요.">
+                            <input type="submit" value="검색">
+                        </form>
+                    </div>
+                </div>
+                <!-- customer-search-box -->
+                <!-- faq-category-list -->
+                <div class="faq-category-list faq-sub">
+                    <ul>
+                        <li><a href="cscenter/faq?code=0">전체</a></li>
+                        <li><a href="cscenter/faq?code=1">반품/교환/환불</a></li>
+                        <li><a href="cscenter/faq?code=2">주문/결제</a></li>
+                        <li class="active"><a href="cscenter/faq?code=3">배송/수령일 안내</a></li>
+                    </ul>
+                </div>
+                <!-- faq-category-list -->
+
+                <section class="accordion-wrap faq-acc">
+                    <ul>
+                        <li class="active">
+                            <button type="button">주문을 수정(취소/변경)할 수 있나요?</button>
+                            <div class="accordion-item">
+                                <pre>회원님께서 주문하신 상품은 아래의 단계별로 처리됩니다.
+주문수정(취소/변경)는 주문/배송조회에서 회원 로그인 후 하실 수 있습니다. 
+비회원 주문의 경우는 주문하실 때 입력했던 이메일 주소와 비밀번호로 로그인하실 수 있습니다.</pre>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button">검색이 되지 않거나 품절/절판인 도서는 구입할 수 없나요?</button>
+                            <div class="accordion-item">
+                                <pre>검색이 되지 않는 도서는 품절/절판일 경우가 대부분이므로 검색 옵션 중 [품절/절판상품 포함] 란에 체크하신 후 한번 더 검색해보시기 바랍니다.
+품절이나 절판으로 표시된 도서는 출판사에서도 더 이상 발간하지 않고 재고가 없는 경우가 대부분이라 구하기 어려운 도서입니다. 
+이 경우 회원님께서 요청하셔도 구입시기를 확실하게 약속드릴 수 없습니다. 
+이러한 도서의 구입가능 여부를 확인하시려면 고객센터의 1:1 문의 접수 이용하여 주시면, 최대한 확인하여 답변드리겠습니다.</pre>
+                            </div>
+                        </li>
+                    </ul>
+                </section><!--accordion-wrap-->
+            </div>
+        <!-- customer-wrap -->
+        
+        </main>
+        <footer class="global-footer">
+            <div class="global-footer-container">
+                <div class="global-footer-notice">
+                    <h3>
+                        <a href="#">공지사항</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                시스템 점검으로 인한 서비스 일시 중지 안내(07/02(일) 새벽) 2023-06-28
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                도서앱 다운받으면 상품권 1천원 2023-07-01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                7월 상품권+쿠폰+결제+추천 혜택모음 2023-07-01
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="global-footer-bootom">
+                    <div class="global-footer-left">
+                        <h4 class="global-footer-title">
+                            <a href="">
+                                고객센터
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </h4>
+                        <a class="global-footer-contact" href="tel:10041004">1004-1004</a>
+                        <p class="global-footer-time">
+                            평일 09:00 ~ 18:00 (주말 &amp; 공휴일 제외)
+                        </p>
+
+                        <dl class="global-footer-detail-list">
+                            <div class="global-footer-detail-item">
+                                <dt>상호명</dt>
+                                <dd>주식회사몬스타북스</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>대표이사</dt>
+                                <dd>이승준</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>사업자등록번호</dt>
+                                <dd>203-87-00672</dd>
+                            </div>
+                        </dl>
+                        <dl class="global-footer-detail-address">
+                            <div class="global-footer-detail-item">
+                                <dt>주소</dt>
+                                <dd>서울특별시 구로구 시흥대로 163길 33 2층, 3층 (주호타워) </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <h3 class="footer-logo">
+                        <img src="../assets/imgs/logo3.png" alt="">
+                    </h3>
+                </div>
+            </div><!-- global-footer-container -->
+        </footer><!-- footer 종료 -->
+        <!-- Arrow up -->
+        <button class="arrow-up"></button>
+    </div>
+
+    <!-- 스크립트 구역 -->
+    <script src="https://kit.fontawesome.com/183a0f8087.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/search.js"></script>
+</body>
+
+</html>
