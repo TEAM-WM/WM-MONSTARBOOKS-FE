@@ -470,6 +470,7 @@ input[type="file"] {
     justify-content: space-between;
     gap: 5px;
 }
+
 .btn-wrap button{
     width: 100%;
     height: 50px;
@@ -479,12 +480,18 @@ input[type="file"] {
     border: 1px solid var(--color-main);
     transition: border 300ms ease-in-out;
 }
+
+
 .btn-wrap button:first-child{
     background-color: var(--color-main);
     color: var(--color-white);
     border: none;
 }
-
+.btn-wrap .btn-gray{
+	background:#767676!important;
+	color:#fff;
+	border:none;
+}
 /* .table-wrap{} */
 
 table {
@@ -513,9 +520,9 @@ th {
 	color: var(--color-white);
 }
 
-tr:hover {
+/* tr:hover {
 	background-color: #f2f2f2;
-}
+} */
 
 
 /* 고객센터 */
@@ -683,6 +690,17 @@ tr:hover {
 .customer-table-wrap table tr:first-child{
     border-top: 1px solid  var(--color-black);
 }
+.customer-table-wrap table th{
+    border-right: none;
+    font-size: var(--font-small);
+    font-weight: var(--weight-bold);
+    line-height: 1.5em;
+    color: #767676;
+    background-color: var(--color-white);
+}
+.customer-table-wrap table .left{
+    font-weight: var(--weight-semi-bold);
+}
 .customer-table-wrap table td{
     border-right: none;
     font-size: var(--font-small);
@@ -728,8 +746,73 @@ tr:hover {
     font-size: var(--font-small);
     text-align: left;
     margin-bottom: 20px;
-    padding: 20px 30px!important;
+    padding: 30px 40px!important;
+    position: relative;
 }
 .faq-acc .accordion-item pre{
     line-height: 1.8em;
+}
+
+.faq-acc .accordion-item::before{
+    content: '└';
+    position: absolute;
+    left: 23px;
+    top: 33px;
+}
+
+.customer-content{
+    margin-top:70px;
+}
+
+.customer-result{
+    /* p,strong */
+    text-align: left;
+    font-weight: var(--weight-bold);
+    margin-bottom: 20px;
+}
+.customer-result strong{
+    color: var(--color-main);
+}
+
+/* 게시판 상세보기 */
+.board-wrap{
+    width: 100%;
+
+}
+.board-wrap .board-detail-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board-wrap .board-detail-header h3{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-bold);
+}
+
+.board-wrap .board-detail-content{
+    text-align: left;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 40px;
+    padding: 40px 20px;
+    line-height: 1.5em;
+    min-height: 400px;
+}
+
+.board-pagination{
+    width: 100%;
+    margin-bottom: 70px;
+}
+.board-pagination > div{
+    padding: 30px 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.board-pagination > div >a{
+    margin-left: 20px;
+}
+.board-wrap .btn-wrap{
+    margin: 0 auto;
 }
