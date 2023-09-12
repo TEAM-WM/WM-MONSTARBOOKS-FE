@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="global-header">
+            <div class="global-header-container">
+                <div class="global-service-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                회원가입
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객센터
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- global-service-list  종료 -->
+                <div class="global-header-main">
+                    <h1>
+                        <a href="./">
+                        </a>
+                    </h1>
+                    <!-- 검색 -->
+                    <div class="global-search">
+                        <form action="" method="get">
+                            <input type="text" name="search" placeholder="세상에 꼭 나와야만 했던 이야기" autocomplete="off">
+                            <button type="submit" class="search-icon"></button>
+                        </form>
+                        <section class="global-search-history">
+                            <div class="global-search-history-recommend">
+                                <h4>
+                                    추천검색어
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            챗GPT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            자바
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            파이썬
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            총균쇠
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            김태연
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            히가시노 게이고
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            노벨문학상
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            베르나르 베르베르
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="global-search-history-recent">
+                                <div class="recent-search">
+                                    <h4>
+                                        최근 검색어
+                                    </h4>
+                                    <button type="button" class="search-delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <span>전체삭제</span>
+                                    </button>
+                                </div>
+                                <ul>
+                                    <li class="recent-search-none center">
+                                        <i class="fa-solid fa-circle-exclamation"></i><br>
+                                        최근 검색어 내역이 없습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- 장바구니 / 마이페이지 아이콘 -->
+                    <ul class="global-user-menu-list">
+                        <li>
+                            <a href="" class="global-user-menu-cart"></a>
+                        </li>
+                        <li>
+                            <a href="" class="global-user-menu-profile"></a>
+                        </li>
+                    </ul>
+                </div><!-- global-header-main  종료 -->
+
+                <!-- 메인메뉴 -->
+                <nav class="global-main-menu">
+                    <!-- 전체 메뉴 아이콘 -->
+                    <button type="button" class="btn_menu">
+                    </button>
+                    <ul class="global-main-menu-list">
+                        <li>
+                            <a href="">베스트</a>
+                        </li>
+                        <li>
+                            <a href="">새로나온책</a>
+                        </li>
+                        <li>
+                            <a href="">국내도서</a>
+                        </li>
+                        <li>
+                            <a href="">외국도서</a>
+                        </li>
+                        <li>
+                            <a href="">이벤트</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="global-all-menu">
+                    <div class="global-book-list-wrap">
+                        <div class="global-book-list">
+                            <h4>
+                                <a href="">
+                                    국내도서 전체
+                                    <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li><a href="">소설</a></li>
+                                <li><a href="">시/에세이</a></li>
+                                <li><a href="">인문</a></li>
+                                <li><a href="">기술공학</a></li>
+                                <li><a href="">가정/육아</a></li>
+                                <li><a href="">요리</a></li>
+                                <li><a href="">건강</a></li>
+                                <li><a href="">취미/실용/스포츠</a></li>
+                                <li><a href="">경제/경영</a></li>
+                                <li><a href="">자기계발</a></li>
+                                <li><a href="">정치/사회</a></li>
+                                <li><a href="">역사/문화</a></li>
+                                <li><a href="">기술/공학</a></li>
+                                <li><a href="">외국어</a></li>
+                                <li><a href="">과학</a></li>
+                                <li><a href="">취업/수험서</a></li>
+                                <li><a href="">여행</a></li>
+                                <li><a href="">컴퓨터/IT</a></li>
+                                <li><a href="">기타</a></li>
+                            </ul>
+                        </div>
+                        <div class="global-book-list">
+                            <h4>
+                                <a href="">
+                                    외국도서 전체
+                                    <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li><a href="">잡지</a></li>
+                                <li><a href="">엔터테인먼트</a></li>
+                                <li><a href="">만화/애니</a></li>
+                                <li><a href="">문학</a></li>
+                                <li><a href="">라이트노벨</a></li>
+                                <li><a href="">취미/실용/여행</a></li>
+                                <li><a href="">생활/요리/건강</a></li>
+                                <li><a href="">예술/건축</a></li>
+                                <li><a href="">인문/사회</a></li>
+                                <li><a href="">경제/경영</a></li>
+                                <li><a href="">과학/기술</a></li>
+                                <li><a href="">어린이ELT</a></li>
+                                <li><a href="">유아/아동/청소년</a></li>
+                                <li><a href="">한국관련도서</a></li>
+                                <li><a href="">문구/멀티/비도서</a></li>
+                                <li><a href="">기타</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="global-book-event">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                </a>
+                                <span>
+                                    베스트
+                                </span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    N
+                                </a>
+                                <span>
+                                    새로나온책
+                                </span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-gift"></i>
+                                </a>
+                                <span>이벤트</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-headset"></i>
+                                </a>
+                                <span>
+                                    고객센터
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div><!-- global-header-container 종료 -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </header><!-- header 종료 -->
+        <main class="main">
+            <article class="book-list-wrap">
+            <!-- 카테고리 분류 -->
+            <section class="breadcrumb-wrap">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">${list.category.bcategory1 }</a>
+                    </li>
+                    <li>
+                        <a href="">${list.category.bcategory2 }</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="book-section-wrap">
+                <!-- book-detail-content -->
+                <div class="book-detail-content">
+                    <!-- 책 상세 시작 -->
+                    <div class="product-card-image">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791170626459.jpg" alt="">
+                    </div><!-- 책이미지 -->
+                    <div class="book-info">
+                        <div class="book-info-box">
+                            <!-- 태그 -->
+                            <div class="book-badge">
+                                <i class="fa-solid fa-crown"></i>
+                                ${list.detail.badge }
+                            </div>
+                            <div class="product-card-title">
+                                <h3>
+                                    아기 판다 푸바오
+                                </h3>
+                                <h4>
+                                    서브 타이틀틀틑ㄹ트트틀트ㅡㄹ
+                                </h4>
+                            </div>
+                            <strong aria-label="저자 / 출판사" class="product-card-author">에버랜드 외 · 시공주니어</strong>
+
+                            
+
+                            <div class="book-price">
+                                <strong class="discount">
+                                    <!-- ${list.bdiscount }% -->
+                                    10%
+                                </strong>
+                                <strong class="sell">
+                                    <!-- <fmt:formatNumber value="${list.bpricesell }" pattern="#,###" /> -->
+                                    9,000원
+                                </strong>
+                                <span class="price">
+                                    <!-- <fmt:formatNumber value="${list.bprice }" pattern="#,###" /> -->
+                                    10,000 원
+                                </span>
+                            </div><!-- 책가격 -->
+                            
+                            <div class="book-detail-info">
+                                <p>
+                                    <strong>
+                                        <span>번역</span>
+                                        요코야리 멩고
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        <span>출간일</span>
+                                        2023.07.23
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        <span>쪽수</span>
+                                        194p
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        <span>ISBN</span>
+                                        9791170626459
+                                    </strong>
+                                </p>
+                            </div><!-- 책 디테일 info -->
+                            <div class="book-review">
+                                <!-- 평점, 리뷰수 -->
+                                
+                                <!-- ${list.starAvg } (${list.reviewCnt}개의 리뷰) -->
+                                <p class="book-star">
+                                    0.0
+                                    <span>  
+                                        (88개의 리뷰)
+                                    </span>
+                                </p>
+                                <!-- 별점 시작 -->
+                                <div class="star-rating">
+                                    <div class="star-back">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <div class="star-front" style="width:60%">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div><!-- 별점끝 -->
+                            </div> <!-- book-review -->
+                            <!-- 배송 예정 날짜 -->
+                            <div class="book-order">
+                                <span class="aqua">배송일정</span>
+                                    <strong>
+                                        09월 11일 (월)
+                                    </strong>
+                                    <p>
+                                        도착예정
+                                    </p>
+                                    <!-- <strong class="red">    
+                                        일시품절
+                                    </strong> -->
+                            </div>
+                            
+                        </div><!-- book-info-box -->
+                        <div class="book-btn-wrap">
+                            <div class="book-count">
+                                <button class="minus_btn">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="text" id="cnt" name="ccount" value="1" readonly />
+                                <input type="hidden" name="bookno" value="${list.bookno }" />
+                                <button class="plus_btn">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <!-- 장바구니 담기 -->	
+                            <button type="button" 
+                            class="cartto-btn"
+                            onclick="add_cart(${list.bookno},${memberno })">
+                                ADD TO CART
+                            </button>
+    
+                            <button type="button"
+                            onclick="go_order(${memberno })">
+                                ORDER
+                            </button>
+                        </div><!-- 책 버튼 -->
+                    </div><!-- 책 박스 -->
+                </div><!-- book-detail-content -->
+
+                
+            </section>
+            <section class="book-section-wrap book-intro-wrap">
+                <!-- 책 상세정보 -->
+                <div class="book-intro">
+                    <h3>
+                        책소개
+                    </h3>
+                    <div>
+                        <h4>
+                            카테고리 분류
+                        </h4>
+                        <p>
+                            국내도서 &gt; 문화
+                        </p>
+                    </div>
+                </div><!-- 책 상세 정보 끝 -->
+
+                <div class="book-info-table-wrap">
+                    <h4>
+                        책 정보
+                    </h4>
+                    <table class="book-info-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">ISBN</th>
+                                <td>9791170626459</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">발행(출시)일자</th>
+                                <td>2023년 07월 23일</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">쪽수</th>
+                                <td>194 쪽</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">크기</th>
+                                <td>132 * 181 * 16 mm / 300 g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="book-recommend-wrap">
+                    <h3>
+                        키워드픽
+                    </h3>
+                    <ul>
+                        <script>
+                            for (let i = 0; i < 5; i++) {
+                                document.write("<li>");
+                                document.write("<div class='product-card'>")
+                                document.write("<div class='product-card-image'><img src='https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791165796396.jpg' alt=''></div>");
+                                document.write("<div class='product-card-title'><h3>아기 판다 푸바오아기 판다 푸바오 아기 판다 푸바오</h3></div>");
+                                document.write("<strong aria-label='저자 / 출판사' class='product-card-author'>에버랜드 외 · 시공주니어</strong>");
+                                document.write("</div></li>");
+    
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="book-info-img">
+                    <img src="https://image.aladin.co.kr/img/img_content/K562935198_01.jpg" alt="">
+                </div>
+                <div class="book-info-text">
+<pre>
+ 첫 발표 이후 43년, 마음에 품어왔던 소설을 마침내 완성하다.
+하루키적 상상력의 모든 것이 담긴 결정적 세계!
+
+“이 작품에는 무언가 나에게 매우 중요한 요소가 포함되어 있다고,
+처음부터 그렇게 느껴왔다.” _무라카미 하루키
+무라카미 하루키의 신작 장편소설 『도시와 그 불확실한 벽』은 집필과 출간에 얽힌 이야기가 특별하다. 1979년 데뷔 이래, 하루키는 각종 문예지에 소설을 비롯한 다양한 글을 발표했고, 대부분 그 글들을 책으로 엮어 공식 출간했다. 그중 유일하게 단행본으로 출간되지 않아 팬들 사이에서도 오랜 미스터리로 남은 작품이 문예지 〈문학계〉에 발표했던 중편소설 「도시와, 그 불확실한 벽」(1980)이었다.
+
+코로나19로 사람들 사이에 벽이 세워지기 시작한 2020년, 그는 사십 년간 묻어두었던 작품을 새로 다듬어 완성할 수 있겠다고 생각했다. 그리고 삼 년간의 집필 끝에 총 3부 구성의 장편소설 『도시와 그 불확실한 벽』을 세상에 내놓았다. 매 작품을 발표할 때마다 ‘하루키 신드롬’을 일으키며 전 세계 독자들의 사랑을 받고 있는 70대의 작가가 청년 시절에 그렸던 세계를 43년 만에 마침내 완성한 것이다.
+
+“내가 쓴 소설 가운데 책이 되어 나오지 않은 것은 거의 없을 텐데, 이 작품만은 일본에서도 다른 어느 나라에서도 아직 한 번도 출판되지 않았다. (…) 그사이 나는 서른한 살에서 일흔한 살이 되었다. (…) 어쨌거나 이 작품을 이렇게 다시 한번, 새로운 형태로 다듬어 쓸 수 있어서(혹은 완성할 수 있어서) 솔직히 마음이 무척 편안해졌다. 나에게 이 작품은 줄곧 목에 걸린 생선 가시처럼 신경쓰이는 존재였으므로. (…) 그것은 역시 나에게(나라는 작가에게, 나라는 인간에게) 중요한 의미를 지니는 가시였다. 사십 년 만에 새로 쓰면서 다시 한번 ‘그 도시’에 돌아가보고, 그 사실을 새삼 통감했다.” _무라카미 하루키, 『도시와 그 불확실한 벽』 작가 후기에서</pre>
+                </div>
+                <!-- 리뷰 -->
+                <div class="book-review-wrap">
+                    <h3>
+                        리뷰
+                        <strong>
+                            555
+                        </strong>
+                    </h3>
+                    <div class="review-scoreboard">
+                        <div class="score-summary">
+                            
+                            <h5>사용자 총점</h5>
+                            <div class="score-star">
+                                <!-- 별점 시작 -->
+                                <div class="star-rating">
+                                    <div class="star-back">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <div class="star-front" style="width:60%">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div><!-- 별점끝 -->
+                                <strong class="average-score" aria-label="평점">
+                                    4.8
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="score-detail">
+                            <dl class="score-stats-list">
+                                <div class="score-stats-item is-active">
+                                    <dt>5점</dt>
+                                    <dd>
+                                        <div class="bar-graph" aria-hidden>
+                                            <div class="active-bar" style="width: 82.5088339223%"></div>
+                                        </div>
+                                        <strong class="count" >467</strong>
+                                    </dd>
+                                </div>
+                        
+                                <div class="score-stats-item">
+                                    <dt>4점</dt>
+                                    <dd>
+                                        <div class="bar-graph" aria-hidden>
+                                            <div class="active-bar" style="width: 15.371024735%"></div>
+                                        </div>
+                                        <strong class="count">87</strong>
+                                    </dd>
+                                </div>
+                        
+                                <div class="score-stats-item">
+                                    <dt>3점</dt>
+                                    <dd>
+                                        <div class="bar-graph" aria-hidden>
+                                            <div class="active-bar" style="width: 2.296819788%"></div>
+                                        </div>
+                                        <strong class="count">13</strong>
+                                    </dd>
+                                </div>
+                        
+                                <div class="score-stats-item">
+                                    <dt>2점</dt>
+                                    <dd>
+                                        <div class="bar-graph" aria-hidden>
+                                            <div class="active-bar"></div>
+                                        </div>
+                                        <strong class="count">0</strong>
+                                    </dd>
+                                </div>
+                        
+                                <div class="score-stats-item">
+                                    <dt>1점</dt>
+                                    <dd>
+                                        <div class="bar-graph" aria-hidden>
+                                            <div class="active-bar"></div>
+                                        </div>
+                                        <strong class="count">0</strong>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div><!--score-detail-->
+                    </div><!-- review-scoreboard -->
+
+
+                    <ol class="review-list">
+                        <!-- NOTE: 유저가 리뷰 이미지를 올린 경우 -->
+                        <li class="review-item">
+                            <header class="review-card-header">
+                                <div class="review-card-box">
+                                    <span class="avatar">
+                                    </span>
+                                    <div class="info">
+                                        <strong class="username">고영희님이좋아합니다</strong>
+                                        <time datetime="2021-01-01"> 2021.01.01 </time>
+                                    </div>
+                                </div>
+                                <div class="review-card-box2">
+                                    <div class="star-rating">
+                                        <div class="star-back">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <div class="star-front" style="width:60%">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div><!-- 별점끝 -->
+                                </div>
+                                
+                            </header>
+                
+                            <div class="review-card-body">
+                                
+                                <pre>
+고양이가 좋아해요 ㅎㅎ 섬세한 온도조절이 안되는게
+아쉽지만, 이 가격 이 디자인이면 만족할 수 밖에 없어요
+:) 좋습니다!</pre>
+                            </div>
+                        </li>
+                        <li class="review-item">
+                            <header class="review-card-header">
+                                <div class="review-card-box">
+                                    <span class="avatar">
+                                    </span>
+                                    <div class="info">
+                                        <strong class="username">고영희님이좋아합니다</strong>
+                                        <time datetime="2021-01-01"> 2021.01.01 </time>
+                                    </div>
+                                </div>
+                                <div class="review-card-box2">
+                                    <div class="star-rating">
+                                        <div class="star-back">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <div class="star-front" style="width:60%">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div><!-- 별점끝 -->
+                                </div>
+                                
+                            </header>
+                
+                            <div class="review-card-body">
+                                <div class="review-image">
+                                    <img src="https://blog.kakaocdn.net/dn/UzscQ/btstvR89Fk4/033sqNxRI5iPOHzax8k9K0/img.gif"
+                                        alt="고영희님이좋아합니다 님의 리뷰 사진" />
+                                </div>
+                                <pre>
+고양이가 좋아해요 ㅎㅎ 섬세한 온도조절이 안되는게
+아쉽지만, 이 가격 이 디자인이면 만족할 수 밖에 없어요
+:) 좋습니다!</pre>
+                            </div>
+                        </li>
+                    </ol>
+                </div><!-- 리뷰 끝 -->
+                
+                <!-- 교환 반품 안내 -->
+                <div class="book-return-title">
+                    <h3>
+                        반품/교환 안내
+                    </h3>
+                    <div class="book-return-btn">
+                        <a href="">교환/반품 신청</a>
+                        <a href="">1:1문의</a>
+                    </div>
+                </div>
+                <div class="book-return-item">
+                    <h4>
+                        반품/교환 가능 기간
+                    </h4>
+                    <p>
+                        변심반품의 경우 수령 후 7일 이내,<br>
+                        상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내
+                    </p>
+                </div>
+                <div class="book-return-item">
+                    <h4>
+                        반품/교환 비용
+                    </h4>
+                    <p>
+                        변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담
+                    </p>
+                </div>
+                <div class="book-return-item">
+                    <h4>
+                        반품/교환 불가 사유
+                    </h4>
+                    <pre>
+1&#41; 소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우
+(단지 확인을 위한 포장 훼손은 제외)
+2&#41; 소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우
+예&#41; 화장품, 식품, 가전제품(악세서리 포함) 등
+3&#41; 복제가 가능한 상품 등의 포장을 훼손한 경우
+예&#41; 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집
+4&#41; 소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우 ((1)해외주문도서)
+5&#41; 디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우
+6&#41; 시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우
+7&#41; 전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</pre>
+                </div>
+                <div class="book-return-item">
+                    <h4>
+                        상품 품절
+                    </h4>
+                    <p>
+                        공급사(출판사) 재고 사정에 의해 품절/지연될 수 있으며, 품절 시 관련 사항에 대해서는 이메일과 문자로 안내드리겠습니다.
+                    </p>
+                </div>
+                <div class="book-return-item">
+                    <h4>
+                        소비자 피해보상 환불 지연에 따른 배상
+                    </h4>
+                    <p>
+                        1&#41; 상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁 해결 기준 (공정거래위원회 고시)에 준하여 처리됨<br>
+                        2&#41; 대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                    </p>
+                </div>
+            </section>
+            <div class="pagination-wrap">
+                <!-- pagination -->
+                <div class="pagination">
+                    <a href="#" aria-label="이전글로 이동" class="disabled">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <ol>
+                        <li class="current-page">
+                            <a href="" aria-label="현재 페이지입니다. 1번 페이지로 이동">1</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="2번 페이지로 이동">2</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="3번 페이지로 이동">3</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="4번 페이지로 이동">4</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="5번 페이지로 이동">5</a>
+                        </li>
+                        <li>
+                            <button type="button" disabled>...</button>
+                        </li>
+                        <li>
+                            <a href="" aria-label="6번 페이지로 이동">6</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="7번 페이지로 이동">7</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="8번 페이지로 이동">8</a>
+                        </li>
+                        <li>
+                            <a href="" aria-label="9번 페이지로 이동">9</a>
+                        </li>
+                    </ol>
+                    <a href="">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+                <!-- pagination -->
+            </div>
+            <!-- pagination-wrap -->
+            </article>
+        </main>
+
+        <footer class="global-footer">
+            <div class="global-footer-container">
+                <div class="global-footer-notice">
+                    <h3>
+                        <a href="#">공지사항</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                시스템 점검으로 인한 서비스 일시 중지 안내(07/02(일) 새벽) 2023-06-28
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                도서앱 다운받으면 상품권 1천원 2023-07-01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                7월 상품권+쿠폰+결제+추천 혜택모음 2023-07-01
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="global-footer-bootom">
+                    <div class="global-footer-left">
+                        <h4 class="global-footer-title">
+                            <a href="">
+                                고객센터
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </h4>
+                        <a class="global-footer-contact" href="tel:10041004">1004-1004</a>
+                        <p class="global-footer-time">
+                            평일 09:00 ~ 18:00 (주말 &amp; 공휴일 제외)
+                        </p>
+
+                        <dl class="global-footer-detail-list">
+                            <div class="global-footer-detail-item">
+                                <dt>상호명</dt>
+                                <dd>주식회사몬스타북스</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>대표이사</dt>
+                                <dd>이승준</dd>
+                            </div>
+                            <div class="global-footer-detail-item">
+                                <dt>사업자등록번호</dt>
+                                <dd>203-87-00672</dd>
+                            </div>
+                        </dl>
+                        <dl class="global-footer-detail-address">
+                            <div class="global-footer-detail-item">
+                                <dt>주소</dt>
+                                <dd>서울특별시 구로구 시흥대로 163길 33 2층, 3층 (주호타워) </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <h3 class="footer-logo">
+                        <img src="../assets/imgs/logo3.png" alt="">
+                    </h3>
+                </div>
+            </div><!-- global-footer-container -->
+        </footer><!-- footer 종료 -->
+        <!-- Arrow up -->
+        <button class="arrow-up"></button>
+    </div>
+
+    <!-- 스크립트 구역 -->
+    <script src="https://kit.fontawesome.com/183a0f8087.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/search.js"></script>
+</body>
+
+</html>
