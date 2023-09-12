@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label.radio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type='radio'] {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1.5px solid #999;
+            appearance: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        input[type='radio']:checked {
+            border: none;
+            background-color: #7e6dbb;
+        }
+
+        input[type='radio']:checked::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--color-white);
+        }
+    </style>
+</head>
+
+<body>
+    <label class="radio">
+        <input type="radio" id="check" name="togather" />
+        <span>
+            음식
+        </span>
+    </label>
+</body>
+
+</html>
