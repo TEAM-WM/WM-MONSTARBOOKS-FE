@@ -184,6 +184,12 @@ main.main{
 /* main article {} */
 
 /* modal 창 기본 스타일 */
+#myCouponModal .modal-content-wrap{
+	width:500px;
+}
+#myCouponModal .modal-content-wrap table{
+	width:100%;
+}
 .modal {
     display: none;
     position: fixed;

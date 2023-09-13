@@ -44,6 +44,7 @@
 .breadcrumb-wrap ul{
     display: flex;
     justify-content: flex-start;
+    align-items:flex-end;
     gap: 7px;
 }
 .breadcrumb-wrap ul li{
@@ -971,6 +972,9 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
+.order-addr-info{
+	width:80%;
+}
 .addr-zipcode{
     display: flex;
     justify-content: flex-start;
@@ -979,24 +983,34 @@
     gap: 5px;
 }
 .addr-readonly{
+	width:100%;
     display: flex;
     justify-content: flex-start;
+    align-items:center;
     gap: 5px;
     margin: 20px 0;
+}
+#addr{
+	display: none;
 }
 #addr .form-small input{
     margin-bottom: 0;
 }
-#sample6_postcode,
+
 #sample6_address,
 #sample6_extraAddress{
-    width: auto;
-    border: none;
     background-color: transparent;
     cursor:default;
+	text-align:left;
+}
+#sample6_postcode{
+	background-color: transparent;
     padding: 0;
+    border: none;
+    text-align: center;
+    margin: 0;
+    width:100px;
     height: min-content;
-    margin-bottom: 0;
 }
 .order-coupon .order-item{
     align-items: center;
